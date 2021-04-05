@@ -19,6 +19,7 @@ const Loading = () => (
   </div>
 )
 
+//
 const dynamicProps = {
   loading: () => <Loading />,
 }

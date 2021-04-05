@@ -28,7 +28,30 @@ const Grid: FC<Props> = ({
     },
     className
   )
-  return <div className={rootClassName}>{children}</div>
+  return (
+    <div>
+      <div className="w-full flex flex-row  " style={{ height: '85vh' }}>
+        <div className="container ">
+          <div className="bg-blue-blouse bg-contain bg-no-repeat h-full">
+            <div className="h-full flex flex-col justify-center align-middle w-full">
+              <a className="w-full flex align-middle justify-center" href="#">
+                Shop
+              </a>
+            </div>{' '}
+          </div>
+        </div>
+        <div className="container">
+          <div className="bg-beige-sweater  bg-contain bg-no-repeat h-full">
+            {' '}
+          </div>
+        </div>
+        <div className="container">
+          <div className="bg-brown-top  bg-contain bg-no-repeat h-full"> </div>
+        </div>
+      </div>
+      <div className={rootClassName}>{children}</div>
+    </div>
+  )
 }
 
 export default Grid

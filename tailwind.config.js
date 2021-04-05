@@ -3,6 +3,7 @@ module.exports = {
     purgeLayersByDefault: true,
     applyComplexClasses: true,
   },
+  // Tree Shake Unused Styles
   purge: {
     content: [
       './pages/**/*.{js,ts,jsx,tsx}',
@@ -61,6 +62,11 @@ module.exports = {
       scale: {
         120: '1.2',
       },
+      backgroundImage: (theme) => ({
+        'blue-blouse': "url('/images/blue.jpeg')",
+        'beige-sweater': "url('/images/brown.jpeg')",
+        'brown-top': "url('/images/cream.jpeg')",
+      }),
     },
   },
 }

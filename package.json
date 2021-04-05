@@ -44,6 +44,7 @@
     "shopify-buy": "^2.11.0",
     "swr": "^0.4.0",
     "tabbable": "^5.1.5",
+    "tailwind": "^4.0.0",
     "tailwindcss": "^2.0.3"
   },
   "devDependencies": {
