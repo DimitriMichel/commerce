@@ -1,1 +1,1 @@
-Next JS Ecommerce Clothing Store
+Next JS Ecommerce Clothing Store.
