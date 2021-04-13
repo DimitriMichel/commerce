@@ -1,6 +1,7 @@
 import cn from 'classnames'
 import { FC, ReactNode, Component } from 'react'
 import s from './Grid.module.css'
+import ContentTitle from '@components/ui/ContentTitle/ContentTitle'
 
 interface Props {
   className?: string
@@ -30,47 +31,6 @@ const Grid: FC<Props> = ({
   )
   return (
     <div>
-      <div className="w-full flex flex-row  " style={{ height: '84.775vh' }}>
-        <div className="container ">
-          <div className="bg-blue-blouse bg-contain bg-no-repeat h-full">
-            <div className="h-full flex flex-col justify-end  align-middle w-full">
-              <a
-                className="w-full flex align-middle text-xl text-black justify-center font-bold bg-white p-2 hover:bg-black hover:text-white focus:ring-black "
-                href="#"
-              >
-                Maria Lined Blouse
-              </a>
-            </div>
-          </div>
-        </div>
-        <div className="container">
-          <div className="bg-beige-sweater  bg-contain bg-no-repeat h-full">
-            <div className="h-full flex flex-col justify-end  align-middle w-full">
-              <a
-                className="w-full flex align-middle text-xl text-black justify-center font-bold bg-white p-2 hover:bg-black hover:text-white focus:ring-black "
-                href="#"
-              >
-                Maria Lined Blouse
-              </a>
-            </div>
-          </div>
-        </div>
-        <div className="container">
-          <div className="bg-brown-top  bg-contain bg-no-repeat h-full">
-            <div className="h-full flex flex-col justify-end  align-middle w-full">
-              <a
-                className="w-full flex align-middle text-xl text-black justify-center font-bold bg-white p-2 hover:bg-black hover:text-white focus:ring-black "
-                href="#"
-              >
-                Maria Lined Blouse
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="w-full bg-blue h-80">
-        <h3>The Newest Looks...Straight From The Runway</h3>
-      </div>
       <div className={rootClassName}>{children}</div>
     </div>
   )

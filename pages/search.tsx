@@ -153,10 +153,10 @@ export default function Search({
                         <a
                           onClick={(e) => handleClick(e, 'categories')}
                           className={
-                            'block lg:inline-block px-4 py-2 lg:p-0 lg:my-2 lg:mx-4'
+                            'block lg:inline-block px-2  lg:my-2 lg:mx-4 bg-black text-white rounded'
                           }
                         >
-                          All Categories
+                          Categories
                         </a>
                       </Link>
                     </li>

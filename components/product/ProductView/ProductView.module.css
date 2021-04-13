@@ -28,28 +28,18 @@
 }
 
 .nameBox {
-  @apply absolute top-6 left-0 z-20 pr-16;
 
-  @screen lg {
-    @apply left-6 pr-16;
-  }
 
   & .name {
-    @apply px-6 py-2 bg-primary text-primary font-bold;
-    font-size: 2rem;
+    @apply  bg-primary text-primary font-bold;
+    font-size: 1rem;
     letter-spacing: 0.4px;
   }
 
   & .price {
-    @apply px-6 py-2 pb-4 bg-primary text-primary font-bold inline-block tracking-wide;
+    @apply  bg-primary text-primary inline-block tracking-wide;
   }
 
-  @screen lg {
-    & .name,
-    & .price {
-      @apply bg-violet-light text-white;
-    }
-  }
 }
 
 .sidebar {

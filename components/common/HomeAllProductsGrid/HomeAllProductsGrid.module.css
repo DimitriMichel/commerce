@@ -14,10 +14,13 @@
   }
 
   & .aside {
-    @apply flex flex-row w-full justify-around mb-12;
+    @apply flex flex-row w-full justify-around mb-12 bg-black;
 
     @screen md {
       @apply mb-0 block sticky top-32;
     }
   }
+}
+.menuTitle{
+  background-color: black;
 }

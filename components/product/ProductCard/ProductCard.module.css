@@ -4,62 +4,8 @@
   ease-linear cursor-pointer;
   height: 100% !important;
 
-  &:hover {
-    & .squareBg:before {
-      transform: scale(0.98);
-    }
-
-    & .productImage {
-      transform: scale(1.2625);
-    }
-
-    & .productTitle > span,
-    & .productPrice,
-    & .wishlistButton {
-      @apply bg-secondary text-secondary;
-    }
-
-    &:nth-child(6n + 1) .productTitle > span,
-    &:nth-child(6n + 1) .productPrice,
-    &:nth-child(6n + 1) .wishlistButton {
-      @apply bg-violet text-white;
-    }
-
-    &:nth-child(6n + 5) .productTitle > span,
-    &:nth-child(6n + 5) .productPrice,
-    &:nth-child(6n + 5) .wishlistButton {
-      @apply bg-blue text-white;
-    }
-
-    &:nth-child(6n + 3) .productTitle > span,
-    &:nth-child(6n + 3) .productPrice,
-    &:nth-child(6n + 3) .wishlistButton {
-      @apply bg-pink text-white;
-    }
-
-    &:nth-child(6n + 6) .productTitle > span,
-    &:nth-child(6n + 6) .productPrice,
-    &:nth-child(6n + 6) .wishlistButton {
-      @apply bg-cyan text-white;
-    }
-  }
-
-  &:nth-child(6n + 1) .squareBg {
-    @apply bg-violet;
-  }
-
-  &:nth-child(6n + 5) .squareBg {
-    @apply bg-blue;
-  }
-
-  &:nth-child(6n + 3) .squareBg {
-    @apply bg-pink;
-  }
-
-  &:nth-child(6n + 6) .squareBg {
-    @apply bg-cyan;
-  }
 }
+
 
 .squareBg,
 .productTitle > span,
@@ -86,7 +32,6 @@
   }
 
   & .productTitle {
-    @apply pt-2;
     font-size: 1rem;
 
     & span {
@@ -100,12 +45,14 @@
 }
 
 .productTitle {
-  @apply pt-0 max-w-full w-full leading-extra-loose;
-  font-size: 2rem;
+  @apply pt-0  pr-2.5 max-w-full leading-extra-loose border-r border-gray-500;
+  font-size: 1rem;
   letter-spacing: 0.4px;
 
+
+
   & span {
-    @apply py-4 px-6 bg-primary text-primary font-bold;
+    @apply   bg-primary text-primary;
     font-size: inherit;
     letter-spacing: inherit;
     box-decoration-break: clone;
@@ -114,7 +61,7 @@
 }
 
 .productPrice {
-  @apply py-4 px-6 bg-primary text-primary font-semibold inline-block text-sm leading-6;
+  @apply    pl-2.5 bg-primary text-primary font-semibold inline-block text-sm leading-6 flex justify-center items-center ;
   letter-spacing: 0.4px;
 }
 
@@ -123,7 +70,9 @@
 }
 
 .imageContainer {
-  @apply flex items-center justify-center;
+  @apply flex items-center justify-center mb-2;
+  height: auto;
+  width: auto;
   overflow: hidden;
 
   & > div {
@@ -132,5 +81,6 @@
 }
 
 .productImage {
-  @apply transform transition-transform duration-500 object-cover scale-120;
+ @apply  object-cover;
+  object-position: 10px 20px;
 }

@@ -45,26 +45,6 @@ const ProductCard: FC<Props> = ({
         </div>
       ) : (
         <>
-          <div className={s.squareBg} />
-          <div className="flex flex-row justify-between box-border w-full z-20 absolute">
-            <div className="absolute top-0 left-0 pr-16 max-w-full">
-              <h3 className={s.productTitle}>
-                <span>{product.name}</span>
-              </h3>
-              <span className={s.productPrice}>
-                {product.price.value}
-                &nbsp;
-                {product.price.currencyCode}
-              </span>
-            </div>
-            {process.env.COMMERCE_WISHLIST_ENABLED && (
-              <WishlistButton
-                className={s.wishlistButton}
-                productId={product.id}
-                variant={product.variants[0] as any}
-              />
-            )}
-          </div>
           <div className={s.imageContainer}>
             {product?.images && (
               <Image
@@ -76,6 +56,28 @@ const ProductCard: FC<Props> = ({
                 quality="85"
                 layout="responsive"
                 {...imgProps}
+              />
+            )}
+          </div>
+          <div className="flex flex-row justify-between box-border w-full z-20">
+            <div className=" max-w-full">
+              <div className="flex flex-row">
+                <h3 className={s.productTitle}>
+                  <span>{product.name}</span>
+                </h3>
+                <span className={s.productPrice}>
+                  {product.price.value}
+                  &nbsp;
+                  {product.price.currencyCode}
+                </span>
+              </div>
+            </div>
+
+            {process.env.COMMERCE_WISHLIST_ENABLED && (
+              <WishlistButton
+                className={s.wishlistButton}
+                productId={product.id}
+                variant={product.variants[0] as any}
               />
             )}
           </div>

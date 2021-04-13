@@ -22,9 +22,9 @@ const HomeAllProductsGrid: FC<Props> = ({
       <div className={s.asideWrapper}>
         <div className={s.aside}>
           <ul className="mb-10">
-            <li className="py-1 text-base font-bold tracking-wide">
+            <li className="py-1  tracking-wide px-2 text-white">
               <Link href={getCategoryPath('')}>
-                <a>All Categories</a>
+                <a className={s.menuTitle}>All Categories</a>
               </Link>
             </li>
             {categories.map((cat: any) => (
@@ -36,7 +36,7 @@ const HomeAllProductsGrid: FC<Props> = ({
             ))}
           </ul>
           <ul className="">
-            <li className="py-1 text-base font-bold tracking-wide">
+            <li className="py-1 text-base tracking-wide">
               <Link href={getDesignerPath('')}>
                 <a>All Designers</a>
               </Link>
