@@ -31,11 +31,12 @@ const ProductView: FC<Props> = ({ product }) => {
   const [loading, setLoading] = useState(false)
   const [choices, setChoices] = useState<SelectedOptions>({
     size: null,
-    color: null,
   })
 
   // Select the correct variant based on choices
   const variant = getVariant(product, choices)
+  console.log(product.options)
+  console.log(variant)
 
   const addToCart = async () => {
     setLoading(true)

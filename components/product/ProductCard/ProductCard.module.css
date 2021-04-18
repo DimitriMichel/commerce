@@ -71,9 +71,7 @@
 
 .imageContainer {
   @apply flex items-center justify-center mb-2;
-  height: auto;
-  width: auto;
-  overflow: hidden;
+
 
   & > div {
     min-width: 100%;
@@ -82,5 +80,6 @@
 
 .productImage {
  @apply  object-cover;
-  object-position: 10px 20px;
+  object-position: 0 20px;
+  width: 100%;
 }

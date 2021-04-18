@@ -9,7 +9,7 @@ interface Props {
   children?: any
   className?: string
   label?: string
-  variant?: 'size' | 'color' | string
+  variant?: 'size' | string
   color?: string
 }
 
@@ -29,8 +29,6 @@ const Swatch: FC<Omit<ButtonProps, 'variant'> & Props> = ({
     {
       [s.active]: active,
       [s.size]: variant === 'size',
-      [s.color]: color,
-      [s.dark]: color ? isDark(color) : false,
     },
     className
   )

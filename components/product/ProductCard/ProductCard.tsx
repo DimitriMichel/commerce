@@ -37,7 +37,7 @@ const ProductCard: FC<Props> = ({
               src={product.images[0].url || placeholderImg}
               alt={product.name || 'Product Image'}
               height={320}
-              width={320}
+              width={380}
               layout="fixed"
               {...imgProps}
             />
