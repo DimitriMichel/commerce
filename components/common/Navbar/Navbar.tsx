@@ -4,7 +4,18 @@ import { Logo, Container } from '@components/ui'
 import { Searchbar, UserNav } from '@components/common'
 import NavbarRoot from './NavbarRoot'
 import s from './Navbar.module.css'
+import { motion } from 'framer-motion'
 
+// title logo "LaRobe" animation
+const scaleVariants = {
+  initial: {
+    scale: 0,
+  },
+  animate: {
+    scale: 1,
+    transition: { duration: 0.3 },
+  },
+}
 const Navbar: FC = () => (
   <NavbarRoot>
     <div className="relative flex flex-row justify-between px-6 py-4 align-center md:py-3 text-white bg-black">
@@ -15,11 +26,11 @@ const Navbar: FC = () => (
           </a>
         </Link>
         <nav className=" hidden ml-6 space-x-4 lg:block">
+          <Link href="/">
+            <a className={s.link}>Home</a>
+          </Link>
           <Link href="/search">
             <a className={s.link}>Shop</a>
-          </Link>
-          <Link href="/search?q=tops">
-            <a className={s.link}>Tops</a>
           </Link>
           <Link href="/search?q=dress">
             <a className={s.link}>Dresses</a>
@@ -29,7 +40,14 @@ const Navbar: FC = () => (
       <Link href="/">
         <a>
           <div className="justify-center flex-1 hidden lg:flex">
-            <div className={s.siteTitle}>LaRobe</div>
+            <motion.div
+              variants={scaleVariants}
+              animate="animate"
+              initial="initial"
+              className={s.siteTitle}
+            >
+              LaRobe
+            </motion.div>
           </div>
         </a>
       </Link>

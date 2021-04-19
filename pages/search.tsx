@@ -15,10 +15,10 @@ import getSiteInfo from '@framework/common/get-site-info'
 
 import rangeMap from '@lib/range-map'
 
-// TODO(bc) Remove this. This should come from the API
+import { motion } from 'framer-motion'
+
 import getSlug from '@lib/get-slug'
 
-// TODO (bc) : Remove or standarize this.
 const SORT = Object.entries({
   'latest-desc': 'Latest arrivals',
   'trending-desc': 'Trending',
@@ -75,9 +75,7 @@ export default function Search({
 
   const { data } = useSearch({
     search: typeof q === 'string' ? q : '',
-    // TODO: Shopify - Fix this type
     categoryId: activeCategory?.entityId as any,
-    // TODO: Shopify - Fix this type
     brandId: (activeBrand as any)?.entityId,
     sort: typeof sort === 'string' ? sort : '',
   })
@@ -93,7 +91,7 @@ export default function Search({
 
   return (
     <Container>
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 mt-3 mb-20">
+      <motion.div className="grid grid-cols-1 lg:grid-cols-12 gap-4 mt-3 mb-20">
         <div className="col-span-8 lg:col-span-2 order-1 lg:order-none">
           {/* Categories */}
           <div className="relative inline-block w-full">
@@ -299,7 +297,7 @@ export default function Search({
         {/* Products */}
         <div className="col-span-8 order-3 lg:order-none">
           {(q || activeCategory || activeBrand) && (
-            <div className="mb-12 transition ease-in duration-75">
+            <div className="my-6 transition ease-in duration-75">
               {data ? (
                 <>
                   <span
@@ -464,7 +462,7 @@ export default function Search({
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </Container>
   )
 }

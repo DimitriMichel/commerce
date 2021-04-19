@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Guntur&display=swap');
+.siteTitle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Hind Gutur, sans-serif;
+  font-size: 1.4rem;
+  padding: 3px 15px;
+  border: black 1px solid;
+}

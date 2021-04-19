@@ -49,11 +49,7 @@ export default function Home({
     <>
       <Jumbotron>
         <Link href="/search">
-          <img
-            className="object-cover m-0 w-full"
-            src="images/newnew.jpeg"
-            alt="image of seasonal sale"
-          />
+          <div className="lg:bg-large bg-mobile h-screen bg-cover bg-no-repeat"></div>
         </Link>
       </Jumbotron>
       <ContentTitle

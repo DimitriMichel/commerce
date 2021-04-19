@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 const Logo = () => (
   <img
-    className="p-1 bg-black"
+    className=" pt-1 pb-0.5 bg-black"
     src="images/larobe_square.png"
     alt="La Robe logo"
     height={40}

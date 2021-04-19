@@ -17,6 +17,13 @@ module.exports = {
   },
   theme: {
     extend: {
+      height: (theme) => ({
+        jumbotron: '90vh',
+        'screen/2': '50vh',
+        'screen/3': 'calc(100vh / 3)',
+        'screen/4': 'calc(100vh / 4)',
+        'screen/5': 'calc(100vh / 5)',
+      }),
       maxWidth: {
         '8xl': '1920px',
       },
@@ -63,9 +70,8 @@ module.exports = {
         120: '1.2',
       },
       backgroundImage: (theme) => ({
-        'blue-blouse': "url('/images/blue.jpeg')",
-        'beige-sweater': "url('/images/brown.jpeg')",
-        'brown-top': "url('/images/cream.jpeg')",
+        large: "url('/images/newnew.jpeg')",
+        mobile: "url('/images/newnew_mobile.jpeg')",
       }),
     },
   },

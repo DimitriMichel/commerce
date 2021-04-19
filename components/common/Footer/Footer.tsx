@@ -100,7 +100,7 @@ const Footer: FC<Props> = ({ className, pages }) => {
             <span>&copy; 2021 LaRobe, Inc. All rights reserved.</span>
           </div>
           <div className="flex items-center text-primary">
-            <span className="text-primary">Crafted by</span>
+            <span className="text-primary">Dimitri Michel</span>
             <a
               rel="noopener"
               href="https://dimitrimichel.com"

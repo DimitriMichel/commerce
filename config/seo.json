@@ -1,26 +1,26 @@
 {
-  "title": "ACME Storefront | Powered by Next.js Commerce",
-  "titleTemplate": "%s - ACME Storefront",
-  "description": "Next.js Commerce - https://www.nextjs.org/commerce",
+  "title": "LaRobe Storefront",
+  "titleTemplate": "%s - LaRobe Storefront",
+  "description": "dimitrmichel.com",
   "openGraph": {
-    "title": "ACME Storefront | Powered by Next.js Commerce",
-    "description": "Next.js Commerce - https://www.nextjs.org/commerce",
+    "title": "LaRobe Storefront",
+    "description": "LaRobe Storefront - https://www.dimitrimichel.com/larobe",
     "type": "website",
     "locale": "en_IE",
-    "url": "https://nextjs.org/commerce",
-    "site_name": "Next.js Commerce",
+    "url": "https://dimitrimichel.com/larobe",
+    "site_name": "LaRobe",
     "images": [
       {
         "url": "/card.png",
         "width": 800,
         "height": 600,
-        "alt": "Next.js Commerce"
+        "alt": "La Robe logo"
       }
     ]
   },
   "twitter": {
-    "handle": "@nextjs",
-    "site": "@nextjs",
+    "handle": "@",
+    "site": "@",
     "cardType": "summary_large_image"
   }
 }
