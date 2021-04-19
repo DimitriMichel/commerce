@@ -1,5 +1,5 @@
 import { Layout } from '@components/common'
-import { Grid, Marquee, Her, Container } from '@components/ui'
+import { Grid, Marquee, Hero, Container } from '@components/ui'
 import Image from 'next/image'
 import { ProductCard } from '@components/product'
 
