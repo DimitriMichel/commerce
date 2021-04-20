@@ -7,15 +7,17 @@
 }
 
 .productDisplay {
-  @apply relative flex px-0 pb-0 box-border col-span-1 bg-violet;
+  @apply relative flex pt-6 pb-0 box-border col-span-1 bg-white;
   min-height: 600px;
 
   @screen md {
     min-height: 700px;
+    padding-top: 6rem;
   }
 
   @screen lg {
     margin-right: -2rem;
+
     margin-left: -2rem;
     @apply mx-0 col-span-6;
     min-height: 100%;
@@ -56,7 +58,7 @@
 
 .imageContainer {
   & > div {
-    @apply h-full;
+    @apply h-full object-cover;
     & > div {
       @apply h-full;
     }
@@ -64,7 +66,7 @@
 }
 
 .img {
-  @apply w-full h-auto max-h-full object-cover;
+  @apply w-full h-auto max-h-full object-contain;
 }
 
 .button {
@@ -81,6 +83,6 @@
   @apply absolute z-30 top-6 right-0 bg-primary text-primary w-10 h-10 flex items-center justify-center font-semibold leading-6 cursor-pointer;
 
   @screen lg {
-    @apply right-12 text-white bg-violet;
+    @apply right-12 text-white bg-white;
   }
 }

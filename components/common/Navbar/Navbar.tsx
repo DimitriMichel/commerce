@@ -20,11 +20,6 @@ const Navbar: FC = () => (
   <NavbarRoot>
     <div className="relative flex flex-row justify-between px-6 py-4 align-center md:py-3 text-white bg-black">
       <div className="flex items-center flex-1">
-        <Link href="/">
-          <a aria-label="Logo">
-            <Logo />
-          </a>
-        </Link>
         <nav className=" hidden ml-6 space-x-4 lg:block">
           <Link href="/">
             <a className={s.link}>Home</a>

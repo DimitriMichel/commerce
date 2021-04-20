@@ -8,7 +8,7 @@
 }
 
 .link:hover {
-  @apply text-accents-9;
+  @apply underline;
 }
 .siteTitle{
   display: flex;
@@ -21,7 +21,7 @@
 }
 
 .link:focus {
-  @apply outline-none text-accents-8;
+  @apply outline-none;
 }
 
 .logo {
@@ -29,6 +29,5 @@
 
   &:hover {
     @apply shadow-md;
-    transform: scale(1.05);
   }
 }
